@@ -133,7 +133,7 @@ kubectl port-forward --address 0.0.0.0 service/monitoring-grafana -n monitoring 
 ```
 - **Alertmanager UI**:
 ```bash
-kubectl port-forward service/alertmanager-operated -n monitoring 9093:9093
+kubectl port-forward --address 0.0.0.0 service/alertmanager-operated -n monitoring 9093:9093
 ```
 
 ### 🧼 Step 5: Clean UP
