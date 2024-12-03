@@ -1,0 +1,3 @@
+[submodule "day-5/efk-setup"]
+	path = day-5/efk-setup
+	url = https://github.com/Bhoopesh123/efk-setup.git
