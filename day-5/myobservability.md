@@ -79,7 +79,7 @@ docker run -d \
 
 ## Install Metricbeat
 
-### Create `metricbeat.yml`
+### Create `metricbeat.yml` and change the permission to root for the file 'chown root:root metricbeat.yml'
 
 ```yaml
 metricbeat.modules:
@@ -114,7 +114,7 @@ logging:
     permissions: 0644
 ```
 
-### Run Metricbeat as a Docker Container
+### Run Metricbeat as a Docker Container by using Root user
 
 ```bash
 docker run -d \
