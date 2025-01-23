@@ -116,6 +116,10 @@ helm install monitoring prometheus-community/kube-prometheus-stack \
 -f ./custom_kube_prometheus_stack.yml
 ```
 
+### 🚀 Step 3.5: Deploy the kube-state-metrics
+```bash
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+```
 ### ✅ Step 4: Verify the Installation
 ```bash
 kubectl get all -n monitoring
